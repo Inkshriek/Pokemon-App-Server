@@ -4,6 +4,11 @@ import CORS from 'cors';
 import webpack from 'webpack';
 
 const App = Express();
+App.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 App.use( CORS() );
 const port = 45030;
 
