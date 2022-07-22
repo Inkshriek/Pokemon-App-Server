@@ -4,10 +4,8 @@ import CORS from 'cors';
 import webpack from 'webpack';
 
 const App = Express();
-App.use(CORS({
-    origin: 'https://inkshriek.github.io/Pokemon-App/'
-  }));
-const port = 45030;
+App.use(CORS());
+const port = process.env.PORT || 3000
 
 const d = new Database();
 d.connect();
