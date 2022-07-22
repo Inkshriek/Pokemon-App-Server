@@ -1,8 +1,6 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "homepage": "https://inkshriek.github.io/Pokemon-App-Server/",
-  "private": true,
   "scripts": {
     "start": "react-scripts start",
     "build": "webpack --mode=production --node-env=production",
